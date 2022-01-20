@@ -19,7 +19,7 @@ If this is your first time, go ahead and clone the repo and give the tool a try.
  * Run the app
 
 ## How It Works
-The tool will read in an RDS of figure metadata to be curated (e.g., pfocr_figures_curating.rds) and compare this against the figures already curated (e.g., pfocr_curated.rds). It will then present the next figure to be curated, displaying editable text field and some helpful button operations. The last of buttons will either save the curated fields, reload the original content, or go back to the previous if you have second thoughts.
+The tool will read in an RDS of figure metadata to be curated (e.g., pfocr_curating_terpene.rds) and compare this against the figures already curated (if any, e.g., curated_terpene.rds). It will then present the next figure to be curated, displaying editable text field and some helpful button operations. The last of buttons will either save the curated fields, reload the original content, or go back to the previous if you have second thoughts.
 
 ![Screenshot](screenshot.png?raw=true "Screenshot")
 
