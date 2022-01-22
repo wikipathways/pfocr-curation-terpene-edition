@@ -36,7 +36,7 @@ The tool will read in an RDS of figure metadata to be curated (e.g., pfocr_curat
  * Metabolic - is this a pathway of metabolic processes?
  * Pre-Terpene - is this a Pre-Terpene pathway (e.g., MVA or MEP)?
  * Terpene - is this a Terpene pathway?
-See the [documentated rules for classification](https://github.com/petermr/petermr/discussions/4#discussioncomment-2003858) for more details.
+See the [rules for classification](https://github.com/petermr/CEVOpen/wiki/Rules-for-Classification-of-terpene-pathway) for more details.
 
 **Decision buttons**
  * Save -- save the current fields to the local RDS and mark as curated.
