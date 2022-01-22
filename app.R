@@ -128,7 +128,7 @@ ui <- fluidPage(
         # textOutput("reftext"),
         p(),
         textInput("fig.num", "Figure number","NA"),
-        textInput("fig.org", "Organism","Homo sapiens"),
+        textInput("fig.org", "Organism","Plant"),
         textAreaInput("fig.title", "Figure title", "NA", width = "100%",rows = 3, resize = "vertical" ),
         textAreaInput("fig.caption", "Figure caption", "NA", width = "100%", rows = 6, resize = "vertical" ),
         
@@ -247,7 +247,7 @@ server <- function(input, output, session) {
     src <- paste0("https://www.ncbi.nlm.nih.gov/pmc/articles/",figid.split[1],"/bin/",figid.split[2])
     output$figure <- renderText({
       c('<a href="',linkout,'" target="_blank"><img src="',src,'", width="600px"></a>')})
-    updateTextInput(session, "fig.org", value="Homo sapiens") 
+    updateTextInput(session, "fig.org", value="Plant") 
     updateTextInput(session, "fig.num", value=df$number) 
     updateTextInput(session, "fig.title", value=df$figtitle) 
     updateTextInput(session, "fig.caption", value=df$caption) 
