@@ -89,7 +89,8 @@ outTSV <- function(data,of){
     mutate(metabolic = ifelse(grepl("\\bmet\\b",classification),1,0)) %>%
     mutate(pre.terpene = ifelse(grepl("\\bpreterp\\b",classification),1,0)) %>%
     mutate(terpene = ifelse(grepl("\\bterp\\b",classification),1,0)) %>%
-    dplyr::select(pmcid,number, pathway,metabolic,pre.terpene,terpene)
+    mutate(terpene.synthase = ifelse(grepl("\\bterpsynth\\b",classification),1,0)) %>%
+    dplyr::select(pmcid,number, pathway,metabolic,pre.terpene,terpene,terpene.synthase)
   write.table(df.table, out.file, sep="\t", row.names = F)
 }
 
@@ -150,7 +151,8 @@ ui <- fluidPage(
                            c("Pathway" = "path",
                              "Metabolic" = "met",
                              "Pre-Terpene" = "preterp",
-                             "Terpene" = "terp")),
+                             "Terpene" = "terp",
+                             "Terpene Synthase" = "terpsynth")),
         
         hr(),
         # Buttons
