@@ -1,6 +1,7 @@
-"pmcid"	"number"	"pathway"	"metabolic"	"pre.terpene"	"terpene"   "terpene.synthase"
-"PMC1203382"	"Figure 3"	1	1	0	0   0
-"PMC120783"	"FIG. 7"	1	1	1	0   0
-"PMC150774"	"Figure 6"	1	1	1	1   1
-"PMC151254"	"Figure 6"	1	0	0	0   0
-"PMC1847584"	"Figure 7"	0	0	0	0   0
+"pmcid"	"number"	"pathway"	"metabolic"	"pre.terpene"	"terpene"	"terpene.synthase"
+"PMC1183420"	"Figure 1"	"Y"	"Y"	"N"	"N"	"N"
+"PMC122160"	"Figure 1"	"Y"	"Y"	"Y"	"Y"	"Y"
+"PMC1256006"	"Figure 2"	"N"	"N"	"Y"	"Y"	"Y"
+"PMC1283772"	"Figure 1"	"Y"	"Y"	"Y"	"N"	"N"
+"PMC1361334"	"Figure 1"	"Y"	"Y"	"Y"	"Y"	"N"
+"PMC1475483"	"Figure 1"	"N"	"N"	"N"	"N"	"N"

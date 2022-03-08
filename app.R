@@ -85,11 +85,11 @@ undoSave <- function(){
 
 outTSV <- function(data,of){
   df.table <- data %>%
-    mutate(pathway = ifelse(grepl("\\bpath\\b",classification),1,0)) %>%
-    mutate(metabolic = ifelse(grepl("\\bmet\\b",classification),1,0)) %>%
-    mutate(pre.terpene = ifelse(grepl("\\bpreterp\\b",classification),1,0)) %>%
-    mutate(terpene = ifelse(grepl("\\bterp\\b",classification),1,0)) %>%
-    mutate(terpene.synthase = ifelse(grepl("\\bterpsynth\\b",classification),1,0)) %>%
+    mutate(pathway = ifelse(grepl("\\bpath\\b",classification),'Y','N')) %>%
+    mutate(metabolic = ifelse(grepl("\\bmet\\b",classification),'Y','N')) %>%
+    mutate(pre.terpene = ifelse(grepl("\\bpreterp\\b",classification),'Y','N')) %>%
+    mutate(terpene = ifelse(grepl("\\bterp\\b",classification),'Y','N')) %>%
+    mutate(terpene.synthase = ifelse(grepl("\\bterpsynth\\b",classification),'Y','N')) %>%
     dplyr::select(pmcid,number, pathway,metabolic,pre.terpene,terpene,terpene.synthase)
   write.table(df.table, out.file, sep="\t", row.names = F)
 }
